@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void rbclick(View view) {
-        cnt=(TextView)findViewById(R.id.textView); //cnt - обьект "надпись"
+        cnt = (TextView) findViewById(R.id.textView); //cnt - обьект "надпись"
         CharSequence zz = cnt.getText(); // получем содержимое обьекта
-        int pz= Integer.valueOf(zz.toString()); // преобразовываем в число
+        int pz = Integer.valueOf(zz.toString()); // преобразовываем в число
         pz++; // прибавляем 1
         cnt.setText(Integer.toString(pz)); // преобразовываем в строку и возвращаем в обьект "надпись"
     }
